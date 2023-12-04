@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Answer Recognition</title>
+  </head>
+  <header>
+    <h1>Answer Recognition</h1>
+    <p>Titles are randomly generated through the Wikipedia API.</p>
+    <p>Click the "Next" button to move on to the title.</p>
+    <p>(Note: Even if you pronouce the title correctly, the speech api might not be able to match it to the right words.)</p>
+  </header>
+  <body>
+    <div class="container">
+      <div class="wiki"><p>-LOADING TITLE-</p></div>
+      <div class="correct"><p>Title has not been spoken yet.</p></div>
+      <p class="heading">Current Attempt</p>
+      <div
+        class="result"
+        spellcheck="false"
+        placeholder="Text will be shown here"
+      >
+        <p class="interim"></p>
+      </div>
+      <button class="btn record">
+        <div class="icon">
+          <img src="bars.svg" alt="" />
+        </div>
+        <p>Start Listening</p>
+      </button>
+      <div class="buttons">
+        <button class="btn clear" disabled>
+          <p>Submit</p>
+        </button>
+        <button class="btn download" disabled>
+          <p>Next</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <p class="heading">Previous Attempts :</p>
+      <div class="texts">
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>Created by George Li</p>
+  </footer>
+</html>
